@@ -8,21 +8,31 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      width: 100%;
     }
     body {
-      /* Default (desktop) background */
+      /* Show the entire image, centered, with no clipping */
       background-image: url('lto.png');
-      background-size: cover;
+      background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
+
+      /* Optional: if you want a solid fill behind the “letterboxed” edges */
+      background-color: #000;
     }
+
     @media (max-width: 600px) {
       body {
         background-image: url('lto-mobile.png');
+        /* Keep the same “contain” behavior on mobile */
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
       }
     }
   </style>
 </head>
 <body>
+  <!-- No additional content -->
 </body>
 </html>

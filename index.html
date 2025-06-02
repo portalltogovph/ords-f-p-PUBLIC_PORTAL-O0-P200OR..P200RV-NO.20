@@ -10,14 +10,19 @@
       height: 100%;
     }
     body {
+      /* Default (desktop) background */
       background-image: url('lto.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
+    @media (max-width: 600px) {
+      body {
+        background-image: url('lto-mobile.png');
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- Page content here (if any) -->
 </body>
 </html>
